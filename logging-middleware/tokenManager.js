@@ -9,7 +9,11 @@ async function refreshToken() {
     console.log('Attempting to refresh access token...');
     const response = await axios.post(config.authTokenUrl, {
       clientID: config.clientID,
-      clientSecret: config.clientSecret
+      clientSecret: config.clientSecret,
+      email: config.email,
+      name: config.name,
+      rollNo: config.rollNo,
+      accessCode: config.accessCode
     }, {
       headers: { 'Content-Type': 'application/json' },
       timeout: 5000

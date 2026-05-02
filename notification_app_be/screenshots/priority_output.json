@@ -1,0 +1,103 @@
+{
+  "timestamp": "2026-05-02T06:11:05.736Z",
+  "requestedCount": 10,
+  "actualCount": 10,
+  "topNotifications": [
+    {
+      "id": "27c92f8e-8e0a-47b9-bedd-15b4c6913e2e",
+      "type": "Placement",
+      "message": "TSMC hiring",
+      "timestamp": "2026-05-02 05:40:39",
+      "priorityScore": 39.64,
+      "weightUsed": 3,
+      "recencyScore": 9.64
+    },
+    {
+      "id": "462694f2-e3f0-44e4-be93-f32c12d8479c",
+      "type": "Placement",
+      "message": "Booking Holdings Inc. hiring",
+      "timestamp": "2026-05-02 03:10:21",
+      "priorityScore": 39.49,
+      "weightUsed": 3,
+      "recencyScore": 9.49
+    },
+    {
+      "id": "d4858f7d-40d9-4de4-8451-889cb330bb86",
+      "type": "Placement",
+      "message": "Nvidia Corporation hiring",
+      "timestamp": "2026-05-01 22:09:39",
+      "priorityScore": 39.19,
+      "weightUsed": 3,
+      "recencyScore": 9.19
+    },
+    {
+      "id": "90b4e774-64f8-47c2-b085-e40d6901d871",
+      "type": "Placement",
+      "message": "Berkshire Hathaway Inc. hiring",
+      "timestamp": "2026-05-01 18:39:57",
+      "priorityScore": 38.99,
+      "weightUsed": 3,
+      "recencyScore": 8.99
+    },
+    {
+      "id": "e467309f-6702-4937-a0b0-f8dda7bccbd5",
+      "type": "Placement",
+      "message": "Berkshire Hathaway Inc. hiring",
+      "timestamp": "2026-05-01 18:11:15",
+      "priorityScore": 38.96,
+      "weightUsed": 3,
+      "recencyScore": 8.96
+    },
+    {
+      "id": "5ea59c0d-f161-41d6-ab68-d33fdb19eb0e",
+      "type": "Placement",
+      "message": "Nvidia Corporation hiring",
+      "timestamp": "2026-05-01 17:40:27",
+      "priorityScore": 38.93,
+      "weightUsed": 3,
+      "recencyScore": 8.93
+    },
+    {
+      "id": "42ca53f4-8cfe-4f5a-bd9d-5a168a96e55c",
+      "type": "Placement",
+      "message": "Alphabet Inc. Class C hiring",
+      "timestamp": "2026-05-01 17:11:03",
+      "priorityScore": 38.9,
+      "weightUsed": 3,
+      "recencyScore": 8.9
+    },
+    {
+      "id": "12f16a8d-720d-4278-bcdf-c1a6f19cd38a",
+      "type": "Placement",
+      "message": "Microsoft Corporation hiring",
+      "timestamp": "2026-05-01 17:10:03",
+      "priorityScore": 38.9,
+      "weightUsed": 3,
+      "recencyScore": 8.9
+    },
+    {
+      "id": "e219847f-c7cc-463e-af6a-4d17775f328e",
+      "type": "Placement",
+      "message": "Berkshire Hathaway Inc. hiring",
+      "timestamp": "2026-05-01 08:10:15",
+      "priorityScore": 38.36,
+      "weightUsed": 3,
+      "recencyScore": 8.36
+    },
+    {
+      "id": "3eba55b2-7e98-434a-9f6b-c4b9fca49908",
+      "type": "Result",
+      "message": "internal",
+      "timestamp": "2026-05-01 22:40:33",
+      "priorityScore": 29.23,
+      "weightUsed": 2,
+      "recencyScore": 9.23
+    }
+  ],
+  "calculationMethod": "Priority = (Weight * 10) + RecencyFactor (0-10)",
+  "weights": {
+    "Placement": 3,
+    "Result": 2,
+    "Event": 1
+  }
+}

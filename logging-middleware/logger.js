@@ -40,7 +40,7 @@ async function sendLog(stack, level, packageName, message, retryCount = 0) {
       stack: stack,
       level: level,
       package: packageName,
-      message: message
+      message: message.substring(0, 48)
     };
     
     const response=await axios.post(config.logApiUrl, logData, {
@@ -73,13 +73,13 @@ async function sendLog(stack, level, packageName, message, retryCount = 0) {
 }
 
 async function processQueue() {
-  if (isProcessingQueue || failedLogsQueue.length === 0) return;
+  if (isProcessingQueue|| failedLogsQueue.length === 0) return;
   
-  isProcessingQueue = true;
+  isProcessingQueue=true;
   console.log(`Processing ${failedLogsQueue.length} queued logs...`);
   
   while (failedLogsQueue.length > 0) {
-    const log = failedLogsQueue.shift();
+    const log=failedLogsQueue.shift();
     await sendLog(log.stack, log.level, log.packageName, log.message);
     await new Promise(resolve => setTimeout(resolve, 100));
   }
@@ -89,23 +89,20 @@ async function processQueue() {
 }
 setInterval(processQueue, 30000);
 async function log(stack, level, packageName, message) {
-  // Don't await - fire and forget for performance
   sendLog(stack, level, packageName, message).catch(console.error);
 }
 
-// Synchronous version for when you need to wait
 async function logSync(stack, level, packageName, message) {
   return await sendLog(stack, level, packageName, message);
 }
 
-// Helper functions for common log types
-const info  = (packageName, message) => log('backend', 'info',  packageName, message);
-const warn  = (packageName, message) => log('backend', 'warn',  packageName, message);
-const error = (packageName, message) => log('backend', 'error', packageName, message);
-const debug = (packageName, message) => log('backend', 'debug', packageName, message);
-const fatal = (packageName, message) => log('backend', 'fatal', packageName, message);
+const info=(packageName, message)=>log('backend', 'info',  packageName, message);
+const warn=(packageName, message)=>log('backend', 'warn',  packageName, message);
+const error=(packageName, message)=>log('backend', 'error', packageName, message);
+const debug=(packageName, message)=>log('backend', 'debug', packageName, message);
+const fatal=(packageName, message)=>log('backend', 'fatal', packageName, message);
 
-module.exports = { 
+module.exports={ 
   log, 
   logSync, 
   info, 
