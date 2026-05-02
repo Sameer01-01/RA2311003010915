@@ -6,7 +6,6 @@ let tokenExpiryTime = null;
 
 async function refreshToken() {
   try {
-    console.log('Attempting to refresh access token...');
     const response = await axios.post(config.authTokenUrl, {
       clientID: config.clientID,
       clientSecret: config.clientSecret,
@@ -21,15 +20,10 @@ async function refreshToken() {
 
     currentToken = response.data.access_token;
     const expiresIn = response.data.expires_in || 3600;
-    tokenExpiryTime = Date.now() + (expiresIn * 1000);
-
-    console.log('Token refreshed successfully!');
+    tokenExpiryTime = Date.now() + expiresIn * 1000;
     return currentToken;
-  } catch (error) {
-    const status = error.response?.status;
-    const msg = error.response?.data || error.message;
-    console.warn(`Token refresh failed (${status || 'network error'}): ${JSON.stringify(msg)}`);
-    console.warn('   Falling back to hardcoded accessToken from config.js');
+
+  } catch (err) {
     currentToken = config.accessToken;
     tokenExpiryTime = Date.now() + 15 * 60 * 1000;
     return currentToken;
@@ -37,7 +31,6 @@ async function refreshToken() {
 }
 
 async function getValidToken() {
- 
   if (!tokenExpiryTime || Date.now() >= tokenExpiryTime - 300000) {
     await refreshToken();
   }
@@ -47,4 +40,5 @@ async function getValidToken() {
 async function initializeToken() {
   return await refreshToken();
 }
-module.exports={ getValidToken, refreshToken, initializeToken };
+
+module.exports = { getValidToken, refreshToken, initializeToken };

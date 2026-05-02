@@ -1,10 +1,8 @@
 const path = require('path');
-const loggerPath = path.join(__dirname, '..', 'logging-middleware', 'logger');
-const { info } = require(loggerPath);
+const { info } = require(path.join(__dirname, '..', 'logging-middleware', 'logger'));
 
 function getOptimalSchedule(vehicles, mechanicHours) {
   const startTime = Date.now();
-  info('service', `Knapsack: ${vehicles.length}v ${mechanicHours}h budget`);
 
   const n = vehicles.length;
   const capacity = mechanicHours;
@@ -31,21 +29,21 @@ function getOptimalSchedule(vehicles, mechanicHours) {
       }
     }
   }
+
   let bestWeight = 0;
-  for (let w = 0; w <= capacity; w++) {
-    if (dp[w]>dp[bestWeight]) bestWeight = w;
+  for (let w = 1; w <= capacity; w++) {
+    if (dp[w] > dp[bestWeight]) bestWeight = w;
   }
 
-  const duration = Date.now() - startTime;
+  const runtime = Date.now() - startTime;
   info('service', `Done: ${selected[bestWeight].length} tasks, impact ${dp[bestWeight]}`);
 
   return {
     selectedTasks: selected[bestWeight],
     totalImpact: dp[bestWeight],
-    totalDuration: bestWeight,
     mechanicHoursAvailable: capacity,
     mechanicHoursUsed: bestWeight,
-    algorithmRuntimeMs: duration
+    algorithmRuntimeMs: runtime
   };
 }
 

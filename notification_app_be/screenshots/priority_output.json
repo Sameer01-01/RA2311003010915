@@ -1,100 +1,97 @@
 {
-  "timestamp": "2026-05-02T06:28:25.840Z",
-  "requestedCount": 10,
-  "actualCount": 10,
+  "timestamp": "2026-05-02T06:45:13.350Z",
   "topNotifications": [
     {
-      "id": "b48cc3f3-bf49-4260-8c6a-e64ac83ee42f",
-      "type": "Placement",
-      "message": "Visa Inc. hiring",
-      "timestamp": "2026-05-02 03:27:15",
-      "priorityScore": 39.49,
-      "weightUsed": 3,
-      "recencyScore": 9.49
-    },
-    {
-      "id": "bc6eb402-60b6-4a8a-8ec8-232f074ed015",
+      "id": "7967bf31-fcd2-4913-96db-155481c94376",
       "type": "Placement",
       "message": "Amazon.com Inc. hiring",
-      "timestamp": "2026-05-02 00:56:39",
-      "priorityScore": 39.34,
+      "timestamp": "2026-05-02 05:13:39",
+      "priorityScore": 39.58,
       "weightUsed": 3,
-      "recencyScore": 9.34
+      "recencyScore": 9.58
     },
     {
-      "id": "aa7fd9fc-a2c4-4295-a5e3-fff246a726a1",
+      "id": "17f6d563-6739-4f2d-af47-f2d4cdcb0e4c",
       "type": "Placement",
-      "message": "Berkshire Hathaway Inc. hiring",
-      "timestamp": "2026-05-01 23:58:21",
-      "priorityScore": 39.29,
+      "message": "Alphabet Inc. Class C hiring",
+      "timestamp": "2026-05-01 20:14:39",
+      "priorityScore": 39.05,
       "weightUsed": 3,
-      "recencyScore": 9.29
+      "recencyScore": 9.05
     },
     {
-      "id": "35d3d03d-b5a9-4e9b-89d8-1061c64d56a0",
+      "id": "488322c3-37aa-4b91-9c19-934a62ecec4b",
       "type": "Placement",
-      "message": "Broadcom Inc. hiring",
-      "timestamp": "2026-05-01 22:28:15",
-      "priorityScore": 39.2,
+      "message": "Meta Platforms Inc. hiring",
+      "timestamp": "2026-05-01 13:14:21",
+      "priorityScore": 38.63,
       "weightUsed": 3,
-      "recencyScore": 9.2
+      "recencyScore": 8.63
     },
     {
-      "id": "cd7fa0bb-f31b-4d16-8153-0527f424e266",
-      "type": "Placement",
-      "message": "Marvell Technology Inc. hiring",
-      "timestamp": "2026-05-01 17:58:33",
-      "priorityScore": 38.93,
-      "weightUsed": 3,
+      "id": "d040b7d3-750c-40fa-b269-b310157499f1",
+      "type": "Result",
+      "message": "internal",
+      "timestamp": "2026-05-02 02:45:03",
+      "priorityScore": 29.43,
+      "weightUsed": 2,
+      "recencyScore": 9.43
+    },
+    {
+      "id": "b5871b9f-7288-4620-9be9-7b8a89b8bcaf",
+      "type": "Result",
+      "message": "internal",
+      "timestamp": "2026-05-02 02:44:09",
+      "priorityScore": 29.43,
+      "weightUsed": 2,
+      "recencyScore": 9.43
+    },
+    {
+      "id": "9ce00c4d-0732-4783-aeda-8063925980fe",
+      "type": "Result",
+      "message": "external",
+      "timestamp": "2026-05-02 02:13:27",
+      "priorityScore": 29.4,
+      "weightUsed": 2,
+      "recencyScore": 9.4
+    },
+    {
+      "id": "0d0b5737-a49b-4109-9eea-ee6e26449607",
+      "type": "Result",
+      "message": "mid-sem",
+      "timestamp": "2026-05-01 20:44:33",
+      "priorityScore": 29.08,
+      "weightUsed": 2,
+      "recencyScore": 9.08
+    },
+    {
+      "id": "aa68bba0-be16-44e0-aef5-2cb8f7dfcb57",
+      "type": "Result",
+      "message": "project-review",
+      "timestamp": "2026-05-01 18:14:57",
+      "priorityScore": 28.93,
+      "weightUsed": 2,
       "recencyScore": 8.93
     },
     {
-      "id": "abc78e70-6650-41f6-9b18-4a186cdb013f",
-      "type": "Placement",
-      "message": "PayPal Holdings Inc. hiring",
-      "timestamp": "2026-05-01 13:57:09",
-      "priorityScore": 38.69,
-      "weightUsed": 3,
-      "recencyScore": 8.69
-    },
-    {
-      "id": "b57f52a6-f4d6-4a32-970d-22e86109d73c",
-      "type": "Placement",
-      "message": "Amazon.com Inc. hiring",
-      "timestamp": "2026-05-01 12:27:33",
-      "priorityScore": 38.6,
-      "weightUsed": 3,
-      "recencyScore": 8.6
-    },
-    {
-      "id": "7c70c766-0fc3-483e-935c-bd9d54a5a8c2",
-      "type": "Placement",
-      "message": "PayPal Holdings Inc. hiring",
-      "timestamp": "2026-05-01 10:56:51",
-      "priorityScore": 38.51,
-      "weightUsed": 3,
-      "recencyScore": 8.51
-    },
-    {
-      "id": "920fc92f-967f-4f6a-91e5-b713dd6b5887",
-      "type": "Placement",
-      "message": "Marriott International Inc. hiring",
-      "timestamp": "2026-05-01 07:57:21",
-      "priorityScore": 38.33,
-      "weightUsed": 3,
-      "recencyScore": 8.33
-    },
-    {
-      "id": "fe8bbb24-1d13-43fe-8c42-ed93d0a2cb7b",
+      "id": "30972b31-b3d6-46f5-a2d9-22c3182035ff",
       "type": "Result",
-      "message": "external",
-      "timestamp": "2026-05-02 04:27:03",
-      "priorityScore": 29.55,
+      "message": "end-sem",
+      "timestamp": "2026-05-01 18:14:03",
+      "priorityScore": 28.93,
       "weightUsed": 2,
-      "recencyScore": 9.55
+      "recencyScore": 8.93
+    },
+    {
+      "id": "cd88fc5e-3110-449c-94ad-a2db4428680d",
+      "type": "Result",
+      "message": "internal",
+      "timestamp": "2026-05-01 15:45:21",
+      "priorityScore": 28.78,
+      "weightUsed": 2,
+      "recencyScore": 8.78
     }
   ],
-  "calculationMethod": "Priority = (Weight * 10) + RecencyFactor (0-10)",
   "weights": {
     "Placement": 3,
     "Result": 2,
